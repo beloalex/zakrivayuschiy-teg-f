@@ -106,7 +106,6 @@ img {
   }
 }
 
-
 .watermark {
   position: absolute;
   top: 25px;
@@ -227,6 +226,10 @@ img {
   transition: 0.3s linear;
 }
 
+.like-icon {
+  margin-inline-end: 2px;
+}
+
 .like-icon:hover .core {
   opacity: 1;
   fill: var(--color-icon-like);
@@ -281,13 +284,11 @@ img {
 }
 
 .card__icon-button {
-  background-color: transparent;
-  border: none;
   padding: 0;
+  background-color: transparent;
   inline-size: 38px;
   block-size: 38px;
   border: 2px solid rgb(0 0 0 / 0);
-  justify-content: center;
   cursor: pointer;
   transition: 0.5s ease-in-out;
 }
@@ -380,7 +381,7 @@ dialog[open] {
   grid-template-columns: 39px auto;
   grid-template-rows: auto max-content;
   column-gap: 20px;
-  row-gap: 30px;   
+  row-gap: 30px;
   padding: 30px;
   max-inline-size: 353px;
 }
@@ -389,7 +390,6 @@ dialog[open] {
   align-self: center;
   inline-size: 39px;
   block-size: 39px;
-
 }
 
 .text-modal {
@@ -452,5 +452,3 @@ dialog::backdrop {
     inline-size: 341px;
   }
 }
-
-
