@@ -1,1 +1,1 @@
-https://github.com/beloalex/zakrivayuschiy-teg-f
+https://beloalex.github.io/zakrivayuschiy-teg-f/
