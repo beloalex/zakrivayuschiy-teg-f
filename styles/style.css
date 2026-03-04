@@ -139,31 +139,31 @@ img {
   gap: 25px;
 }
 
-.image__filter-clean-sheet {
+.image__filter-saturate0.3 {
   filter: saturate(0.3);
 }
 
-.image__filter-what-if {
+.image__filter-saturate4 {
   filter: saturate(4);
 }
 
-.image__filter-chase {
+.image__filter-hue-rotate20deg {
   filter: hue-rotate(20deg);
 }
 
-.image__filter-nearby {
+.image__filter-invert {
   filter: invert(0.7);
 }
 
-.image__filter-strategy {
+.image__filter-sepia {
   filter: sepia(0.9);
 }
 
-.image__filter-hands-go-down {
+.image__filter-blur {
   filter: blur(10px);
 }
 
-.image__filter-here {
+.image__filter-hue-rotate79deg {
   filter: hue-rotate(79deg);
 }
 
@@ -184,14 +184,40 @@ img {
   margin-block-end: 25px;
 }
 
-.card__like-button {
+.button {
   position: relative;
-  background-color: #fff;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
+  background-color: #fff;
   border: var(--outline-block);
   cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.5s ease-in-out;
+  z-index: 0;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 2px 2px 0 #000;
+}
+
+.card__like-button {
   min-inline-size: 130px;
   min-block-size: 38px;
 }
@@ -301,55 +327,11 @@ img {
   border: 2px solid #000;
 }
 
-.card__like-button:focus {
-  outline: none;
-  box-shadow: 2px 2px 0 #000;
-  transition: 0.3s ease;
-}
-
-.card__like-button::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: #000;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: 0.5s ease-in-out;
-  z-index: 0;
-}
-
-.card__like-button:hover::before {
-  transform: scaleX(1);
-}
-
 .button-save {
-  position: relative;
-  display: inline-flex;
-  background-color: #fff;
   gap: 8px;
   justify-self: center;
-  align-items: center;
-  justify-content: center;
-  border: var(--outline-block);
-  cursor: pointer;
   min-inline-size: 335px;
   min-block-size: 55px;
-  color: var(--color-constanta);
-}
-
-.button-save::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: #000;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: 0.5s ease-in-out;
-  z-index: 0;
-}
-
-.button-save:hover::before {
-  transform: scaleX(1);
 }
 
 .floppy__icon-button {
@@ -400,43 +382,10 @@ dialog[open] {
   text-transform: uppercase;
 }
 
-.button-save:focus {
-  outline: none;
-  box-shadow: 2px 2px 0 #000;
-  transition: 0.3s ease;
-}
-
 .button-modal {
   display: grid;
   grid-column: 1 / -1;
-  align-items: center;
-  position: relative;
-  background-color: var(--color-constanta);
-  border: var(--outline-block);
   min-block-size: 38px;
-  cursor: pointer;
-  color: var(--color-constanta);
-}
-
-.button-modal::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: #000;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: 0.5s ease-in-out;
-  z-index: 0;
-}
-
-.button-modal:hover::before {
-  transform: scaleX(1);
-}
-
-.button-modal:focus {
-  outline: none;
-  box-shadow: 2px 2px 0 #000;
-  transition: 0.3s ease;
 }
 
 dialog .button__text {
