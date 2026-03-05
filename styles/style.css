@@ -141,7 +141,7 @@ img {
   gap: 25px;
 }
 
-.image__filter-saturate0.3 {
+.image__filter-saturate03 {
   filter: saturate(0.3);
 }
 
