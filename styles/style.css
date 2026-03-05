@@ -189,11 +189,9 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   background-color: #fff;
   border: var(--outline-block);
   cursor: pointer;
-
   transition: 0.3s ease;
 }
 
@@ -252,10 +250,6 @@ img {
   transition: 0.3s linear;
 }
 
-.like-icon {
-  margin-inline-end: 2px;
-}
-
 .like-icon:hover .core {
   opacity: 1;
   fill: var(--color-icon-like);
@@ -310,6 +304,7 @@ img {
 }
 
 .card__icon-button {
+  display: flex;
   padding: 0;
   background-color: transparent;
   inline-size: 38px;
