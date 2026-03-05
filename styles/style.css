@@ -65,6 +65,7 @@
   display: grid;
   grid-template-columns: auto;
   gap: 50px;
+  margin-block-end: 100px;
 }
 
 .card {
@@ -107,6 +108,7 @@ img {
 }
 
 .watermark {
+  z-index: 1;
   position: absolute;
   top: 25px;
   right: 25px;
@@ -323,6 +325,7 @@ img {
 }
 
 .button-save {
+  background-color: #fff;
   gap: 8px;
   justify-self: center;
   min-inline-size: 335px;
@@ -334,6 +337,7 @@ img {
   z-index: 1;
   inline-size: 21px;
   block-size: 21px;
+  color: #fff;
   mix-blend-mode: difference;
 }
 
@@ -364,6 +368,7 @@ dialog[open] {
 }
 
 .floppy__icon-modal {
+  color: #000;
   align-self: center;
   inline-size: 39px;
   block-size: 39px;
